@@ -74,3 +74,55 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Lấy các phần tử và nút kích hoạt
+const overlay = document.querySelector('.popup-overlay');
+const sharePopup = document.getElementById('data-share');
+const questionPopup = document.getElementById('data-question');
+const reviewPopup = document.getElementById('data-review');
+const shareBtn = document.querySelector('.share-popup');
+const questionBtn = document.querySelector('.question-popup');
+const reviewBtn = document.querySelector('.write-review');
+
+// Hàm để thêm lớp active
+function addActiveClass(element) {
+    overlay.classList.add('active');
+    element.classList.add('active');
+}
+
+// Hàm để loại bỏ lớp active
+function removeActiveClass() {
+    overlay.classList.remove('active');
+    sharePopup.classList.remove('active');
+    questionPopup.classList.remove('active');
+    reviewPopup.classList.remove('active');
+}
+
+// Sự kiện khi nhấp vào nút chia sẻ
+shareBtn.addEventListener('click', function() {
+    removeActiveClass();
+    addActiveClass(sharePopup);
+});
+
+// Sự kiện khi nhấp vào nút câu hỏi
+questionBtn.addEventListener('click', function() {
+    removeActiveClass();
+    addActiveClass(questionPopup);
+});
+
+// Sự kiện khi nhấp vào nút đánh giá
+reviewBtn.addEventListener('click', function() {
+    removeActiveClass();
+    addActiveClass(reviewPopup);
+});
+
+// Sự kiện khi nhấp vào overlay hoặc nút đóng
+overlay.addEventListener('click', removeActiveClass);
+document.querySelectorAll('.close-trigger').forEach(function(closeBtn) {
+    closeBtn.addEventListener('click', removeActiveClass);
+});
+
+});

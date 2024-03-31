@@ -2201,12 +2201,14 @@ footer {
     margin: 40px auto;
     display: none;
     opacity: 0;
+    visibility: hidden;
     transition: var(--transition-timing);
 }
 
 .product-detail-page .product-detail-content.active {
     display: block;
     opacity: 1;
+    visibility: visible;
 }
 
 .product-detail-content .title {
@@ -2261,11 +2263,14 @@ footer {
     margin: auto;
     display: none;
     opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-timing);
 }
 
 .product-detail-page .product-custom-content.active {
     display: block;
     opacity: 1;
+    visibility: visible;
 }
 
 .product-detail-page .product-custom-content .title {
@@ -2287,12 +2292,14 @@ footer {
     margin: auto;
     display: none;
     opacity: 0;
+    visibility: hidden;
     transition: var(--transition-timing);
 }
 
 .product-detail-page .product-reviews-content.active {
     display: block;
     opacity: 1;
+    visibility: visible;
 }
 
 .product-reviews-content .head-review {
@@ -2384,6 +2391,8 @@ footer {
     margin: auto;
     display: none;
     opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-timing);
 }
 
 .product-shipping-content.active { 
@@ -2437,6 +2446,8 @@ footer {
     scroll-snap-align: start;
 }
 
+
+/*  */
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -2445,6 +2456,14 @@ footer {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-timing);
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /*-----------------------------------*\
@@ -2460,12 +2479,12 @@ footer {
 }
 
 
-#data-share.data-popup ion-icon {
+.data-popup ion-icon {
     cursor: pointer;
     transition: var(--transition-timing);
 }
 
-#data-share.data-popup ion-icon:hover {
+.data-popup ion-icon:hover {
     color: var(--salmon-pink);
 }
 
@@ -2476,14 +2495,14 @@ footer {
     height: 100%;
 }
 
-#data-share.data-popup .data-content {
+.data-popup .data-content {
     position: relative;
     background: var(--white);
     padding: 40px 20px;
     width: 400px;
 }
 
-#data-share.data-popup .close-trigger {
+.data-popup .close-trigger {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -2508,11 +2527,11 @@ footer {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
+    gap: 10px;
 }
 
 #data-share.data-popup .copy-outline {
-    top: 25px;
     width: 30px;
     height: 30px;
     cursor: pointer !important;
@@ -2533,4 +2552,91 @@ footer {
 #data-share.data-popup li ion-icon {
     width: 20px;
     height: 20px;
+}
+
+.data-popup .title {
+    border-bottom: none;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: var(--weight-700);
+}
+
+.data-popup input {
+    margin-bottom: 20px;
+    padding: 10px 10px;
+}
+
+.data-popup textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+
+
+.data-popup button {
+    background: var(--eerie-black);
+    padding: 20px 25px;
+    color: var(--white);
+    font-size: var(--fs-4);
+    font-weight: var(--weight-600);
+    margin: 20px auto;
+    transition: var(--transition-timing);
+}
+
+.data-popup button:hover {
+    background: var(--davys-gray);
+}
+
+.d-review .stars input {
+    display: none;
+}
+
+.d-review .stars > input:checked ~ label {
+    color: var(--sandy-brown);
+}
+
+.d-review :where(.rating, .stars) {
+    display: flex;
+    gap: 7px;
+}
+
+.d-review .review-title {
+    margin-top: 20px;
+}
+
+.d-review .stars {
+    flex-direction: row-reverse;
+}
+
+#data-share {
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-timing);
+}
+
+#data-share.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#data-question {
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-timing);
+}
+
+#data-question.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#data-review {
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-timing);
+}
+
+#data-review.active {
+    opacity: 1;
+    visibility: visible;
 }

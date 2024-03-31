@@ -126,11 +126,11 @@
                             </div>
                             <div class="share">
                                 <ion-icon name="share-social-outline"></ion-icon>
-                                <a href="#">Share</a>
+                                <a href="#" class="share-popup">Share</a>
                             </div>
                             <div class="ask-question">
                                 <ion-icon name="help-circle-outline"></ion-icon>
-                                <a href="#">Ask question</a>
+                                <a href="#" class="question-popup">Ask question</a>
                             </div>
                         </div>
                     </div>
@@ -202,8 +202,7 @@
                             <p>/</p>
                             <span>3 reviews</span>
                         </div>
-                        <button>
-                            <a href="" class="write-review">Write a review</a>
+                        <button class="write-review">Write a review
                         </button>
                     </div>
 
@@ -965,6 +964,60 @@
                   <li class=""><ion-icon name="logo-whatsapp"></ion-icon></li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="data-question" class="data-popup d-question">
+          <div class="wrap">
+            <div class="data-content">
+              <ion-icon name="close-outline" class="close-trigger"></ion-icon>
+              <div class="title">The Question</div>
+              <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <textarea placeholder="Your question is..." cols="30" rows="5"></textarea>
+                <button class="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="data-review" class="data-popup d-review">
+          <div class="wrap">
+            <div class="data-content">
+              <ion-icon name="close-outline" class="close-trigger"></ion-icon>
+              <div class="title">Write a Review</div>
+              <form action="">
+                <div class="dotgrid">
+                  <div class="wrapper">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                  </div>
+                </div>
+                <div class="rating">
+                  <span>Your rating: </span>
+                  <div class="stars">
+                    <input type="radio" name="rating" id="star1">
+                    <label for="star1"><ion-icon name="star"></ion-icon></label>
+
+                    <input type="radio" name="rating" id="star2">
+                    <label for="star2"><ion-icon name="star"></ion-icon></label>
+
+                    <input type="radio" name="rating" id="star3">
+                    <label for="star3"><ion-icon name="star"></ion-icon></label>
+
+                    <input type="radio" name="rating" id="star4">
+                    <label for="star4"><ion-icon name="star"></ion-icon></label>
+
+                    <input type="radio" name="rating" id="star5">
+                    <label for="star5"><ion-icon name="star"></ion-icon></label>
+                  </div>
+                </div>
+                <input type="text" placeholder="Review title" class="review-title">
+                <textarea placeholder="Your review is..." cols="30" rows="5" class="review-text"></textarea>
+                <button class="submit">Submit</button>
+              </form>
             </div>
           </div>
         </div>
