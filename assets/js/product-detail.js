@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Lấy các phần tử và nút kích hoạt
+// Lấy các phần tử và nút kích hoạt
 const overlay = document.querySelector('.popup-overlay');
 const sharePopup = document.getElementById('data-share');
 const questionPopup = document.getElementById('data-question');

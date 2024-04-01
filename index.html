@@ -19,7 +19,7 @@
             rel="stylesheet"
         />
 </head>
-<body>
+<body class="has-scrollbar">
     <div class="overlay" data-overlay></div>
 
     <!-- Modal -->
@@ -169,7 +169,7 @@
                     </button>
 
                     <button class="action-btn">
-                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        <ion-icon name="bag-handle-outline" class="bag-handle"></ion-icon>
                         <span class="count">0</span>
                     </button>
                 </div>
@@ -3446,7 +3446,8 @@
   
       </div>
 
-
+      <!-- POP UP CART -->
+      <div class="cart-popup-overlay"></div>
       <div id="data-cart" class="cart-menu">
         <div class="wrap">
           <ion-icon name="close-outline" class="close-trigger"></ion-icon>
@@ -3644,8 +3645,8 @@
                   <span>$47.00</span>
                 </div>
 
-                <button class="apply">Checkout</button>
-                <button class="apply">View Cart</button>
+                <button class="checkout">Checkout</button>
+                <button class="view-cart">View Cart</button>
               </div>
             </div>
           </div>

@@ -46,6 +46,30 @@ for (let i = 0; i < accordionBtn.length; i++) {
 }
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const cartOverlay = document.querySelector('.cart-popup-overlay');
+    const cartPopup = document.getElementById('data-cart');
+    const cartBtn = document.querySelector('.bag-handle');
 
+    // Hàm để thêm lớp active
+    function addActiveClass(element) {
+        cartOverlay.classList.add('active');
+        element.classList.add('active');
+    }
 
+    function removeActiveClass() {
+        cartOverlay.classList.remove('active');
+        cartPopup.classList.remove('active');
+    }
 
+    cartBtn.addEventListener('click', function() {
+        removeActiveClass();
+        addActiveClass(cartPopup);
+    });
+
+    cartOverlay.addEventListener('click', removeActiveClass);
+    document.querySelectorAll('.close-trigger').forEach(function(closeBtn) {
+    closeBtn.addEventListener('click', removeActiveClass);
+});
+
+});
