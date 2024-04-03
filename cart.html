@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- RESET -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- GG FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+</head>
+<body>
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <a href="" class="breadcrumb-link">Home</a>
+                <a href="" class="breadcrumb-link beadcrumb-now">Product Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <h1 class="category-page title">PRODUCT CART</h1>
+
+    <div class="cart-container">
+        <div class="container">
+            <table width = 100%>
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><ion-icon name="trash-outline"></ion-icon></td>
+                        <td><img src="./assets/images/products/clothes-1.jpg" alt=""></td>
+                        <td><p>The Sweater in Tosca</p></td>
+                        <td><p>$65</p></td>
+                        <td><input type="number" value="1"></td>
+                        <td><p>$130.00</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><ion-icon name="trash-outline"></ion-icon></td>
+                        <td><img src="./assets/images/products/clothes-1.jpg" alt=""></td>
+                        <td><p>The Sweater in Tosca</p></td>
+                        <td><p>$65</p></td>
+                        <td><input type="number" value="1"></td>
+                        <td><p>$130.00</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><ion-icon name="trash-outline"></ion-icon></td>
+                        <td><img src="./assets/images/products/clothes-1.jpg" alt=""></td>
+                        <td><p>The Sweater in Tosca</p></td>
+                        <td><p>$65</p></td>
+                        <td><input type="number" value="1"></td>
+                        <td><p>$130.00</p></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cart-infor">
+                <div class="discount">
+                    <h1 class="title">Discount</h1>
+                    <p>Enter a coupin code below to apply it</p>
+                    <div class="enter-coupon">
+                        <input type="text" placeholder="Coupon code">
+                    <button class="apply-discount">
+                        Apply
+                    </button>
+                    </div>
+                </div>
+
+                <div class="payment">
+                    <h1 class="title">PAYMENT TOTAL</h1>
+                    <div class="sub-total">
+                        <p>SUBTOTAL: </p><span>$25</span>
+                    </div>
+                    <div class="shipping">
+                        <p>SHIPPING: </p><span>$3</span>
+                    </div>
+                    <div class="total">
+                        <p>TOTAL: </p><span>$200</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="checkout">
+                PROCEED TO CHECKOUT
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- IONICON LINK -->
+    <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+</body>
+</html>
