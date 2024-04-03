@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <!-- RESET -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- GG FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+</head>
+<body>
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <a href="" class="breadcrumb-link">Home</a>
+                <a href="" class="breadcrumb-link beadcrumb-now">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <h1 class="checkout-page title">CHECK OUT</h1>
+    <div class="checkout-container">
+        <div class="container">
+            <div class="billing-details">
+                <h1 class="title">Billing Details</h1>
+
+                <div class="name">
+                    <div class="firstname">
+                        <div class="sub-title">First name *</div>
+                        <input type="text" placeholder="First name">
+                    </div>
+
+                    <div class="lastname">
+                        <div class="sub-title">Last name *</div>
+                        <input type="text" placeholder="Last name">
+                    </div>
+                </div>
+
+                <p class="sub-title">Company name</p>
+                <input type="text" placeholder="Company name">
+
+                <p class="sub-title">Country / Region *</p>
+                <select name="country" class="country">
+                    <option value="VietNam">VietNam</option>
+                    <option value="US">United States</option>
+                    <option value="Eng">England</option>
+                    <option value="UK">United Kingdom</option>
+                </select>
+
+                <p class="sub-title">Street address *</p>
+                <input type="text" placeholder="Street address">
+                <input type="text" placeholder="Apartment, suite etc. (Optional)">
+
+                <p class="sub-title">Town / City *</p>
+                <input type="text" placeholder="Town / City">
+
+                <p class="sub-title">State *</p>
+                <input type="text" placeholder="State">
+
+                <p class="sub-title">Zip Code *</p>
+                <input type="text" placeholder="State">
+
+                <div class="contact">
+                    <div class="phone">
+                        <div class="sub-title">Phone *</div>
+                        <input type="text" placeholder="Phone">
+                    </div>
+
+                    <div class="email">
+                        <div class="sub-title">Email *</div>
+                        <input type="text" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-summary">
+                <h1 class="title">Order Summary</h1>
+                <div class="list-product">
+                    <div class="product-item">
+                        <div class="thumb">
+                            <img src="./assets/images/product-detail/product_01.jpg" alt="">
+                            <p>x1</p>
+                        </div>
+                        <div class="product-info">
+                            <div class="subtitle">The Sweater in Tosca</div>
+                            <p>Color: Green</p>
+                            <p>Size: L</p>
+                            <p class="price">$45.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="thumb">
+                            <img src="./assets/images/product-detail/product_02.jpg" alt="">
+                            <p>x1</p>
+                        </div>
+                        <div class="product-info">
+                            <div class="subtitle">The Sweater in Tosca</div>
+                            <p>Color: Green</p>
+                            <p>Size: L</p>
+                            <p class="price">$45.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="thumb">
+                            <img src="./assets/images/product-detail/product_03.jpg" alt="">
+                            <p>x1</p>
+                        </div>
+                        <div class="product-info">
+                            <div class="subtitle">The Sweater in Tosca</div>
+                            <p>Color: Green</p>
+                            <p>Size: L</p>
+                            <p class="price">$45.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-info">
+                    <h2 class="sub-title">Select payment</h2>
+                    <div class="payment-methods">
+                        <ion-icon name="card-outline"></ion-icon>
+                        <ion-icon name="logo-paypal"></ion-icon>
+                        <ion-icon name="hand-right-outline"></ion-icon>
+                    </div>
+                    <div class="enter-coupon">
+                        <input type="text" placeholder="Coupon code">
+                        <button class="apply-discount">
+                        Apply
+                        </button>
+                    </div>
+
+                    <div class="subtitle">
+                        <p>Subtitle</p><span>$147.00</span>
+                    </div>
+
+                    <div class="tax">
+                        <p>Tax</p><span>$14.70</span>
+                    </div>
+
+                    <p class="shipping">Shipping</p>
+                    <div class="free">
+                        <div class="box"><input type="checkbox" class="checkbox"><p>Free</p></div><span>$0.00</span>
+                    </div>
+
+                    <div class="flat">
+                        <div class="box"><input type="checkbox" class="checkbox"><p>Flat</p></div><span>$10.00</span>
+                    </div>
+
+                    <div class="promo-discount">
+                        <p>Promotion Discount</p><span>$00.00</span>
+                    </div>
+
+                    <div class="total">
+                        <p>Total</p><span>$161.70</span>
+                    </div>
+
+                    <button class="place-order">
+                        PLACE ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- JS -->
+    <script src="./assets/js/checkout.js"></script>
+
+    <!-- IONICON LINK -->
+    <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+</body>
+</html>
